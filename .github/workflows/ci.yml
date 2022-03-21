@@ -11,10 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Cache node_modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runnder.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-key: |
+            ${{ runnder.os }}-node-
+            
+
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+      
       - run: npm ci
       - run: npm run format:check
       - run: npm test -- --coverage
