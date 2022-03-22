@@ -1,9 +1,9 @@
 module.exports = {
-  branches: 'main',
-  repositoryUrl: 'https://github.com/markkell/github-actions-react-app',
+  branches: "main",
+  repositoryUrl: "https://github.com/markkell/github-actions-react-app",
   plugins: [
-    '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
-    '@semantic-release/github',
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github",
   ],
 };
