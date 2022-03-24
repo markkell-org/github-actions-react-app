@@ -11,6 +11,6 @@ jobs:
         with:
           who-to-greet: "World"
       - run: |
-           echo "Time: ${{ steps.hello.outputs }}"
+           echo "Time: ${{ steps.hello.outputs.time }}"
   
 
