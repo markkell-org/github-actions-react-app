@@ -1,11 +1,11 @@
-#!/bin.sh -l
+#!/bin/sh
 
-if [ true ]
-then 
-  echo 'error'
-  exit 1
+# if [ true ]
+# then 
+#   echo 'error'
+#   exit 1
 
-fi
+# fi
 
 echo "::debug ::Debug Message"
 echo "::warning ::Warning Message"
