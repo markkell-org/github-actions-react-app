@@ -8,7 +8,7 @@ echo "::add-mask:: $1"
 
 echo "Hello $1"
 
-time=$(data)
+time=$(date)
 echo "::set-output name=time::$time"
 
 echo "::group::Some expandable logs"
