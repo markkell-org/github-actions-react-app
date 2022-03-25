@@ -6,6 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: ./.github/actions/issue
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: Title
+          body: Body
+          assignees: "mark1,mark2"
+      - run: |
+          echo ${{ step.issue.outputs.issue }}
+      
       - uses: ./.github/actions/hello
         id: hello
         with:

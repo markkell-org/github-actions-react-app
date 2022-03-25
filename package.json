@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "format:check": "prettier --check \"**/*.{js,jsx,yml,json,css,scss,md}\"",
     "format": "prettier --write \"**/*.{js,jsx,yml,json,css,scss,md}\"",
-    "compile": "npx ncc build .github/actions/hello/index.js -o .github/actions/hello/dist"
+    "compile:hello": "npx ncc build .github/actions/hello/index.js -o .github/actions/hello/dist",
+    "compile:issue": "npx ncc build .github/actions/issue/index.js -o .github/actions/issue/dist"
   },
   "husky": {
     "hooks": {
