@@ -20,7 +20,7 @@ jobs:
         with:
           who-to-greet: "World"
       - uses: ./.github/actions/hello-docker
-        id: hello
+        id: hello2
         with:
           who-to-greet: "World"
       - run: |
