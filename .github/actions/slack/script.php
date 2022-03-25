@@ -28,6 +28,6 @@ echo "::endgroup::\n";
 
 if(!$resposne->success) {
     echo $response->body;
-    exit(1);
+    // exit(1);
 
 }
