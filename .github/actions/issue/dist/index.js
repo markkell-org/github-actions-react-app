@@ -4316,6 +4316,8 @@ async function run() {
       assignees: assignees ? assignees.split(',') : undefined,
     });
 
+    core.debug(JSON.stringify(response.data));
+
     core.setOutput('issue', JSON.stringify(response.data));
   } catch (error) {}
 }
